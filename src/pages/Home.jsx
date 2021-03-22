@@ -7,6 +7,7 @@ import { Services } from '../components/services'
 import { Testimonials } from '../components/testimonials'
 import { Team } from '../components/Team'
 import { Contact } from '../components/contact'
+import Recents from '../components/Carousel'
 import JsonData from '../data/data.json'
 import SmoothScroll from 'smooth-scroll'
 
@@ -25,6 +26,7 @@ export default function Home() {
             <BackgroundVideo />
             <Services data={landingPageData.Services} />
             <About data={landingPageData.About} />
+            <Recents/>
             <Testimonials data={landingPageData.Testimonials} />
             <Team data={landingPageData.Team} />
             <Contact data={landingPageData.Contact} />

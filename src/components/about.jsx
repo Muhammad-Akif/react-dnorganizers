@@ -1,7 +1,7 @@
 export const About = (props) => {
   return (
     <div id='about'>
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='row'>
           <div className='col-xs-12 col-md-6'>
             {' '}
@@ -9,7 +9,8 @@ export const About = (props) => {
           </div>
           <div className='col-xs-12 col-md-6'>
             <div className='about-text'>
-              <h2>About Us</h2>
+              <h2 className='text-center'>About Us</h2>
+              <div className='line' style={{width:'25%'}}/>
               <p>{props.data ? props.data.paragraph : 'loading...'}</p>
               <h3>Why Choose Us?</h3>
               <div className='list-style'>

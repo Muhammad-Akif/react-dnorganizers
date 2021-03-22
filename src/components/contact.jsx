@@ -39,7 +39,7 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2 style={{border: '2px solid orange',padding: '20px', borderRadius: '10px',textAlign: 'center'}}>Get In Touch</h2>
+                <h2 style={{border: '2px solid orange',padding: '20px', borderRadius: '10px',textAlign: 'center',color: 'black'}}>Get In Touch</h2>
                 <p>
                   Please fill out the form below to send us an email and we will
                   get back to you as soon as possible.
@@ -57,7 +57,7 @@ export const Contact = (props) => {
                         placeholder='Name'
                         required
                         onChange={handleChange}
-                        style={{border: '2px solid orange',padding: '20px', borderRadius: '5px',backgroundColor: 	'	#FFF8DC'}}
+                        style={{border: '2px solid orange',padding: '20px', borderRadius: '5px',backgroundColor: 	'	#fff'}}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -70,7 +70,7 @@ export const Contact = (props) => {
                         name='email'
                         className='form-control'
                         placeholder='Email'
-                        style={{border: '2px solid orange',padding: '20px', borderRadius: '5px',backgroundColor: 	'	#FFF8DC'}}
+                        style={{border: '2px solid orange',padding: '20px', borderRadius: '5px',backgroundColor: 	'	#fff'}}
                         required
                         onChange={handleChange}
                       />
@@ -85,14 +85,14 @@ export const Contact = (props) => {
                     className='form-control'
                     rows='4'
                     placeholder='Message'
-                    style={{border: '2px solid orange',padding: '20px', borderRadius: '10px',backgroundColor: 	'	#FFF8DC'}}
+                    style={{border: '2px solid orange',padding: '20px', borderRadius: '10px',backgroundColor: 	'	#fff'}}
                     required
                     onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
-                <button type='submit' className='btn btn-custom btn-lg' style={{border: '4px solid orange',padding: '20px', borderRadius: '10px'}}>
+                <button type='submit' className='btn btn-custom btn-lg' style={{border: '3px solid orange',padding: '20px', borderRadius: '10px',color: 'black'}}>
                   Send Message
                 </button>
               </form>
@@ -100,9 +100,9 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3 style={{border: '2px solid orange',padding: '20px', borderRadius: '10px', textAlign: 'center'}}>Contact Info</h3>
+              <h3 style={{border: '2px solid orange',padding: '20px', borderRadius: '10px', textAlign: 'center',color: 'black'}}>Contact Info</h3>
               <p>
-                <span style={{fontSize: '16px'}}>
+                <span style={{fontSize: '16px',color: 'black'}}>
                   <i className='fa fa-map-marker'></i> Address
                 </span>
                 {props.data ? props.data.address : 'loading'}
@@ -110,7 +110,7 @@ export const Contact = (props) => {
             </div>
             <div className='contact-item'>
               <p>
-                <span style={{fontSize: '16px'}}>
+                <span style={{fontSize: '16px',color: 'black'}}>
                   <i className='fa fa-phone'></i> Phone
                 </span>{' '}
                 {props.data ? props.data.phone : 'loading'}
@@ -118,7 +118,7 @@ export const Contact = (props) => {
             </div>
             <div className='contact-item'>
               <p>
-                <span style={{fontSize: '16px'}}>
+                <span style={{fontSize: '16px',color: 'black'}}>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}

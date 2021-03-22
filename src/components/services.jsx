@@ -7,7 +7,7 @@ export const Services = () => {
       <div className='container-fluid'>
         <div className='section-title'>
           <h2>Our Services</h2>
-          <div id='line'></div>
+          <div className='line'></div>
           <p style={{color: 'red', padding: '15px',fontSize: '18px'}}>
           Welcome to DN Event Management  
           </p>

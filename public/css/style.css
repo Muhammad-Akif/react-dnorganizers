@@ -246,8 +246,8 @@ header .intro-text {
 } */
 /* About Section */
 #about {
-	padding: 100px 0;
-	background-color: rgb(223, 226, 226);
+	padding: 5.5%;
+	background-color: #f6f6f6;
 }
 #about h3 {
 	font-size: 22px;
@@ -258,7 +258,8 @@ header .intro-text {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-#about h2::after {
+/* true */
+/* #about h2::after {
 	position: absolute;
 	content: "";
 	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -266,7 +267,7 @@ header .intro-text {
 	width: 180px;
 	bottom: 0;
 	left: 0px;
-}
+} */
 #about .about-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
@@ -282,7 +283,7 @@ header .intro-text {
 	padding-right: 8px;
 }
 #about img {
-	width: 520px;
+	width: 40vw !important;
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
@@ -296,7 +297,7 @@ header .intro-text {
 #services{
 	padding: 100px;
 }
-#line{
+.line{
 	height: 3px;
 	margin: 0 auto !important;
 	width: 80%;
@@ -401,7 +402,8 @@ header .intro-text {
 }
 /* Testimonials Section */
 #testimonials {
-	padding: 100px 0;
+	padding: 30px 0;
+	margin: 0px 50px;
 	background: #f6f6f6;
 }
 #testimonials i {
@@ -440,7 +442,7 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-	padding: 100px 0;
+	padding: 30px 0;
 }
 #team h4 {
 	margin: 5px 0;
@@ -459,9 +461,13 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-	color: rgba(255,255,255,.75);
+	/* background: linear-gradient(to right, #22b4ce 0%, #865cfb 100%);
+	background: linear-gradient(to right, #22b4ce 0%, #865cfb 0%); */
+	/* background: linear-gradient(to right, #61979b 0%, #387b8f 100%); */
+	background: #e0e0e0;
+	color: rgb(114, 113, 113);
 }
+
 #contact .section-title {
 	margin-bottom: 40px;
 }
@@ -551,7 +557,7 @@ color: #777;
 	margin-right: 10px;
 }
 #contact .social {
-	border-top: 1px solid rgba(255,255,255,0.15);
+	border-top: 1px solid rgba(100, 54, 11, 0.15);
 	padding-top: 50px;
 	margin-top: 50px;
 	text-align: center;
@@ -565,18 +571,19 @@ color: #777;
 	width: 48px;
 	height: 48px;
 	padding: 12px 0;
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid rgb(163, 32, 32);
+	color: rgb(211, 81, 81);
 	border-radius: 50%;
 	transition: all 0.3s;
 }
 #contact .social i.fa:hover {
 	color: #608dfd;
 	background: #fff;
+	border: 2px solid #608dfd;
 }
 /* Footer Section*/
 #footer {
-	background: #f6f6f6;
+	background: white;
 	padding: 30px 0;
 }
 #footer p {
@@ -589,12 +596,15 @@ color: #777;
 #footer a:hover {
 	border-bottom: 2px solid #608dfd;
 }
-
 @media (max-width: 768px) {
 #about{
-	padding-top: 60px;
+	padding: 0px auto !important;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 15px;
 }
 #about img {
+	width: 80vw !important;
 	margin: 0px 0px 50px 0px;
 }
 #menu{
@@ -603,9 +613,7 @@ color: #777;
 #portfolio{
 	padding-top: 50px;
 }
-#contact .btn-custom{
-	background-color:rgb(209, 143, 21);
-}
+
 .ful{
 	height: 100vh !important;
 	width: 100vh !important;
@@ -613,6 +621,9 @@ color: #777;
 }
 #services{
 	padding: 20px;
+}
+#testimonials{
+	margin: 20px;
 }
 .pd{
 	padding-top: 30px;
