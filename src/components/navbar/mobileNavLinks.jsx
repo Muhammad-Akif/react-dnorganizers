@@ -51,6 +51,9 @@ const Link = styled.a`
 
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
+  const onClickHandler = () => {
+    setOpen(false)
+  }
 
   return (
     <NavLinksContainer>
@@ -58,22 +61,22 @@ export function MobileNavLinks(props) {
       {isOpen && (
          <LinksWrapper>
          <LinkItem>
-           <Link href="#services" onClick={()=>{setOpen(false)}}>Services</Link>
+           <Link href="#services" onClick={onClickHandler}>Services</Link>
          </LinkItem>
          <LinkItem>
-           <Link href="#about">About</Link>
+           <Link href="#about" onClick={onClickHandler}>About</Link>
          </LinkItem>
          <LinkItem>
-           <Link href="#testimonials">Testimonials</Link>
+           <Link href="#testimonials" onClick={onClickHandler}>Testimonials</Link>
          </LinkItem>
          <LinkItem>
-           <Link href="#carousel">Recents</Link>
+           <Link href="#carousel" onClick={onClickHandler}>Recents</Link>
          </LinkItem>
          <LinkItem>
-           <Link href="#team">Team</Link>
+           <Link href="#team" onClick={onClickHandler}>Team</Link>
          </LinkItem>
          <LinkItem>
-           <Link href="#contact">Contact</Link>
+           <Link href="#contact" onClick={onClickHandler}>Contact</Link>
          </LinkItem>
          <Accessibility/>
        </LinksWrapper>
