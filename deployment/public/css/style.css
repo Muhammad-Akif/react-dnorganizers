@@ -599,7 +599,7 @@ color: #777;
 @media (max-width: 768px) {
 #about{
 	padding: 0px auto !important;
-	padding-top: 40px;
+	padding-top: 25px;
 	padding-bottom: 40px;
 	margin-top: 15px;
 }
