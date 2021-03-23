@@ -7,6 +7,7 @@ const NavLinksContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  
 `;
 
 const LinksWrapper = styled.ul`
@@ -22,14 +23,17 @@ const LinksWrapper = styled.ul`
   position: absolute;
   top: 60px;
   right: 0px;
+  background-color: grey;
+  opacity: 1;
 `;
 
 const LinkItem = styled.li`
   width: 100%;
   padding: 0 1.1em;
   color: #222;
+  border-bottom: 1px solid #ccc;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
 
   margin-bottom: 10px;
@@ -37,7 +41,7 @@ const LinkItem = styled.li`
 
 const Link = styled.a`
   text-decoration: none;
-  color: inherit;
+  color: white;
   font-size: inherit;
 `;
 
