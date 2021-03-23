@@ -10,7 +10,6 @@ import { Contact } from '../components/contact'
 import Recents from '../components/Carousel'
 import JsonData from '../data/data.json'
 import SmoothScroll from 'smooth-scroll'
-
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
     speedAsDuration: true,
@@ -26,7 +25,7 @@ export default function Home() {
             <BackgroundVideo />
             <Services data={landingPageData.Services} />
             <About data={landingPageData.About} />
-            <Recents/>
+            <Recents />
             <Testimonials data={landingPageData.Testimonials} />
             <Team data={landingPageData.Team} />
             <Contact data={landingPageData.Contact} />

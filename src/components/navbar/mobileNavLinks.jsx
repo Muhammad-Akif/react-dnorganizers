@@ -13,7 +13,7 @@ const LinksWrapper = styled.ul`
   margin: 0;
   padding: 15px 0px 0px 10px;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   list-style: none;
   background-color: #fff;
   width: 50vw;
@@ -41,9 +41,9 @@ const Link = styled.a`
   font-size: inherit;
 `;
 
-const Marginer = styled.div`
-  height: 2em;
-`;
+// const Marginer = styled.div`
+//   height: 2em;
+// `;
 
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
@@ -52,25 +52,27 @@ export function MobileNavLinks(props) {
     <NavLinksContainer>
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
-        <LinksWrapper>
-          <LinkItem>
-            <Link href="#">Services</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">About</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Testimonials</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Team</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="#">Contact</Link>
-          </LinkItem>
-          <Marginer />
-          <Accessibility />
-        </LinksWrapper>
+         <LinksWrapper>
+         <LinkItem>
+           <Link href="#services">Services</Link>
+         </LinkItem>
+         <LinkItem>
+           <Link href="#about">About</Link>
+         </LinkItem>
+         <LinkItem>
+           <Link href="#testimonials">Testimonials</Link>
+         </LinkItem>
+         <LinkItem>
+           <Link href="#carousel">Recents</Link>
+         </LinkItem>
+         <LinkItem>
+           <Link href="#team">Team</Link>
+         </LinkItem>
+         <LinkItem>
+           <Link href="#contact">Contact</Link>
+         </LinkItem>
+         <Accessibility/>
+       </LinksWrapper>
       )}
     </NavLinksContainer>
   );

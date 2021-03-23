@@ -8,7 +8,7 @@ export const Services = () => {
         <div className='section-title'>
           <h2>Our Services</h2>
           <div className='line'></div>
-          <p style={{color: 'red', padding: '15px',fontSize: '18px'}}>
+          <p style={{color: 'red', padding: '15px',fontSize: '20px',fontWeight: 'bold'}}>
           Welcome to DN Event Management  
           </p>
         </div>

@@ -19,8 +19,8 @@ const LinkItem = styled.li`
   height: 100%;
   padding: 0 1.1em;
   color: #222;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 18px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -28,7 +28,7 @@ const LinkItem = styled.li`
   transition: all 220ms ease-in-out;
 
   &:hover {
-    border-top: 2px solid #2ecc71;
+    border-top: 3px solid #2ecc71;
   }
 `;
 
@@ -43,22 +43,22 @@ export function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#">Services</Link>
+          <Link href="#services">Services</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">About</Link>
+          <Link href="#about">About</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Testimonials</Link>
+          <Link href="#testimonials">Testimonials</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Recents</Link>
+          <Link href="#carousel">Recents</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Team</Link>
+          <Link href="#team">Team</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Contact</Link>
+          <Link href="#contact">Contact</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

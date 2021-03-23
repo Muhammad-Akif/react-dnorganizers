@@ -7,7 +7,6 @@
   padding-top: 2% !important;
 }
 
-
 /* Background Vedio*/
 .Container {
     position: relative;
@@ -27,6 +26,7 @@
 @media (max-width: 768px) {
   .Container{
     width: 100vw;
+    height: 90vh;
   }
   .SecondExample{
     width: 97vw !important;
@@ -58,17 +58,19 @@
   padding: 10px;
   }
 .SubContent p {
-    width: 90vw;
-    color: #eeeeeead;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .SubContent button {
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 30px;
     color: #f1f1f1;
     border: #f1f1f1 1px solid;
     padding: 20px 25px;
     background-color: hsla(0, 0%, 0%, 0);
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     width: 150px;
     border-radius: 3px;
 }

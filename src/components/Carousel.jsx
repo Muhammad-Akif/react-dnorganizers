@@ -8,7 +8,6 @@ import img3 from '../img-ved/Carousel/img3.jpg'
 import img4 from '../img-ved/Carousel/img4.jpg'
 import img5 from '../img-ved/Carousel/img5.jpg'
 import img6 from '../img-ved/Carousel/img6.jpg'
-
 import "../style/SecondExample.scss"
 
 function Project(props) {
