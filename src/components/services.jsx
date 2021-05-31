@@ -8,18 +8,18 @@ export const Services = () => {
         <div className='section-title'>
           <h2>Our Services</h2>
           <div className='line'></div>
-          <p style={{color: 'red', padding: '15px',fontSize: '20px',fontWeight: 'bold'}}>
-          Welcome to DN Event Management  
+          <p style={{ color: 'red', padding: '15px', fontSize: '20px', fontWeight: 'bold' }}>
+            Welcome to DN Event Management
           </p>
         </div>
         <div className='row'>
           {Sdata
             ? Sdata.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4 pd'>
-                  {console.log(d)}
-                  <Cards {...d}/>
-                </div>
-              ))
+              <div key={`${d.name}-${i}`} className='col-md-4 pd'>
+                {console.log(d)}
+                <Cards {...d} />
+              </div>
+            ))
             : 'loading'}
         </div>
       </div>
